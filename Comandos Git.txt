@@ -1,0 +1,126 @@
+marco@DESKTOP-UP5I9EV MINGW64 ~
+$ git --version
+git version 2.17.1.windows.2
+
+marco@DESKTOP-UP5I9EV MINGW64 ~
+$ git config --global user.name "marcoscrocci"
+
+marco@DESKTOP-UP5I9EV MINGW64 ~
+$ git config --global user.name "marcoscrocci@gmail.com"
+
+marco@DESKTOP-UP5I9EV MINGW64 ~
+$
+
+$ clear
+
+marco@DESKTOP-UP5I9EV MINGW64 ~
+$ cd ..
+
+marco@DESKTOP-UP5I9EV MINGW64 /c/Users
+$ cd ..
+
+marco@DESKTOP-UP5I9EV MINGW64 /c
+$ cd marcos
+
+marco@DESKTOP-UP5I9EV MINGW64 /c/marcos
+$ cd projetos
+
+marco@DESKTOP-UP5I9EV MINGW64 /c/marcos/projetos
+$ cd github
+
+marco@DESKTOP-UP5I9EV MINGW64 /c/marcos/projetos/github (master)
+$ cd visual~1
+
+marco@DESKTOP-UP5I9EV MINGW64 /c/marcos/projetos/github/visual~1 (master)
+$ cd ASPNET~1
+
+marco@DESKTOP-UP5I9EV MINGW64 /c/marcos/projetos/github/visual~1/ASPNET~1 (maste               r)
+
+$ ls	(igual ao dir do ms-dos)
+ codigo/   README.md  'Vídeo Aulas ASP.NET MVC.url'
+
+marco@DESKTOP-UP5I9EV MINGW64 /c/marcos/projetos/github/visual~1/ASPNET~1 (master)
+$ git init
+Initialized empty Git repository in C:/Marcos/Projetos/Github/Visual Studio/ASPNETmvcNaPratica-master/.git/
+
+marco@DESKTOP-UP5I9EV MINGW64 /c/marcos/projetos/github/visual~1/ASPNET~1 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .gitattributes
+        .gitignore
+        README.md
+        "V\303\255deo Aulas ASP.NET MVC.url"
+        codigo/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+arquivo .gitignore -> Configurar os arquivos que você não quer gerenciar no github, ou seja, ignorar.
+
+$ git add . 	-> Incluir todos os arquivos no github
+
+$ git commit -m "primeiro commit"	-- Confirmar a inclusão ou alterações dos arquivos incluídos ou alterados.
+
+$ git status
+
+marco@DESKTOP-UP5I9EV MINGW64 ~
+$ ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/marco/.ssh/id_rsa):	-> ENTER (sem digitar nada)
+Created directory '/c/Users/marco/.ssh'.
+Enter passphrase (empty for no passphrase):		-> digitei a senha do github
+Enter same passphrase again:
+Your identification has been saved in /c/Users/marco/.ssh/id_rsa.
+Your public key has been saved in /c/Users/marco/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:Gk54rtYhb1gKMLJ2TDCv/rdH+NIii1FYA1A6SD+q/CU marco@DESKTOP-UP5I9EV
+The key's randomart image is:
++---[RSA 2048]----+
+|o+.              |
+|o+o              |
+|+ +=             |
+|+.+oo.           |
+|.*+.. = S        |
+|+ooo.*o+         |
+|+o.E OB.         |
+| .+.*=++         |
+| ..==o=          |
++----[SHA256]-----+
+
+Abrir arquivo C:\Users\marco\.ssh\id_rsa.pub
+Copiar a chave e colar no site do github em https://github.com/settings/keys opção New SSH Key
+
+echo "# visualstudio" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/marcoscrocci/visualstudio.git		-> Incluir os arquivos novos para o github
+git push -u origin master	-> Enviar os arquivos
+
+Copiar os arquivos do github
+git clone https://github.com/marcoscrocci/visualstudio.git
+
+Alterando os arquivos para adicionar 
+
+$ git add . 	-> Incluir ou atualizar todos os arquivos adicionados ou alterados. 
+					Para fazer apenas para um arquivo específico, o nome do arquivo deve ser especificado.
+
+
+$ git push -u origin master		-> Enviar para o github as alterações
+
+
+$ git pull	-> receber todos as alterações realizadas por outros programadores da equipe
+
+$ git log
+
+
+
+
+
+ 
+
