@@ -118,6 +118,36 @@ $ git pull	-> receber todos as alterações realizadas por outros programadores 
 
 $ git log
 
+Remover um arquivo:
+git rm arquivo.txt
+git commit -m "arquivo removido"
+git push -u origin master
+
+Obter a URL do GitHub da pasta atual:
+git romote -version
+
+Listar os arquivos com os atributos:
+ls -log
+
+Remover uma pasta inteira:
+git rm -r Pasta
+git commit -m "Pasta removida"
+git push -u origin master
+
+Undo uncommited changes
+git checkout -- 	(colocar . para todos ou um nome de arquivo específico)
+
+Undo commited changes
+git revert
+
+Resetting changes
+git reset
+
+Verificar o log
+git log
+
+
+
 
 
 
